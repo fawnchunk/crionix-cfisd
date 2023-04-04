@@ -5,4 +5,5 @@ copy javascript-
 -paste in url bar-
 -click it on a web url
 
-         NEW UPDATE NOW HAS AN X BUTTON WOW MY NIGGAS
+         NEW UPDATE ADDED A UI FOR CAC
+NEXT UPDATE: PAYMENT SYSTEM
