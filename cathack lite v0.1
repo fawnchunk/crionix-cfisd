@@ -1,4 +1,4 @@
-javascript:(function(){
+javascript:(function() {
   const container = document.createElement("div");
   container.style.cssText = `
     position: fixed;
@@ -13,19 +13,19 @@ javascript:(function(){
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     z-index: 999999;
   `;
-  
+
   const title = document.createElement("h1");
   title.innerText = "cathack lite";
   title.style.marginTop = "0";
   container.appendChild(title);
-  
+
   const select = document.createElement("select");
   select.style.width = "100%";
   const options = [
-    {label: "edpuzzle", url: "https://cdn.jsdelivr.net/gh/fawnchunk/crionix-cfisd@main/dsnfijdww"},
-    {label: "blooket", url: "https://cdn.jsdelivr.net/gh/fawnchunk/crionix-cfisd@main/erferwfgrgrwgr"},
-    {label: "gimkit", url: "https://cdn.jsdelivr.net/gh/fawnchunk/crionix-cfisd@main/ijdjnijef"},
-    {label: "inspect", url: "https://cdn.jsdelivr.net/gh/fawnchunk/crionix-cfisd@main/wqefkncrojsfnohiiwgwue"},
+    { label: "edpuzzle", url: "https://cdn.jsdelivr.net/gh/fawnchunk/crionix-cfisd@main/dsnfijdww" },
+    { label: "blooket", url: "https://cdn.jsdelivr.net/gh/fawnchunk/crionix-cfisd@main/erferwfgrgrwgr" },
+    { label: "gimkit", url: "https://cdn.jsdelivr.net/gh/fawnchunk/crionix-cfisd@main/ijdjnijef" },
+    { label: "inspect", url: "https://cdn.jsdelivr.net/gh/fawnchunk/crionix-cfisd@main/wqefkncrojsfnohiiwgwue" },
   ];
   options.forEach((option) => {
     const opt = document.createElement("option");
@@ -34,7 +34,7 @@ javascript:(function(){
     select.appendChild(opt);
   });
   container.appendChild(select);
-  
+
   const button = document.createElement("button");
   button.innerText = "Submit";
   button.style.width = "100%";
@@ -42,15 +42,15 @@ javascript:(function(){
   button.addEventListener("click", () => {
     container.removeChild(select);
     container.removeChild(button);
-    
+
     const progress = document.createElement("progress");
     progress.style.width = "100%";
     container.appendChild(progress);
-    
+
     const status = document.createElement("div");
     status.innerText = "fetching URL...";
     container.appendChild(status);
-    
+
     const url = select.value;
     fetch(url)
       .then((response) => {
@@ -62,16 +62,19 @@ javascript:(function(){
       })
       .then((code) => {
         status.innerText = "decompiling code...";
-        
+
         setTimeout(() => {
           status.innerText = "preparing to execute...";
-          
+
           setTimeout(() => {
             status.innerText = "executed ✅";
-            
+            const script = document.createElement("script");
+            script.innerText = code;
+            document.body.appendChild(script);
+
             setTimeout(() => {
               status.innerText = "closing menu...";
-              
+
               setTimeout(() => {
                 document.body.removeChild(container);
               }, 1000);
@@ -81,10 +84,10 @@ javascript:(function(){
       })
       .catch((error) => {
         status.innerText = "failed to load!!! ❌";
-        
+
         setTimeout(() => {
           status.innerText = "closing UI...";
-          
+
           setTimeout(() => {
             document.body.removeChild(container);
           }, 1000);
@@ -92,6 +95,6 @@ javascript:(function(){
       });
   });
   container.appendChild(button);
-  
+
   document.body.appendChild(container);
 })();
