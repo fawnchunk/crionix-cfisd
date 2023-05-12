@@ -41,9 +41,15 @@
 				</div>
 </div>
 		<div class="button">
-				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS50_gMHqUQfArHBJNCn3HokQt0FKZVnf0Y9TnTWzHR1FdGl9QQ4gnfzr5CQSMS4pZ4b9p4vqR3JAM:https://3kh0.github.io/3kh0.github.io-replit/images/reviews/Alexgaming.png&usqp=CAU&ec=48665701">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu6Mr5MSwjg0qgLC7_rb2xvE8Niuriz80TeNoTjRxHUhrDW8maF7GhimsiW2Kiv_TjsrZPmPADUL4:https://d3eys52k95jjdh.cloudfront.net/wp-content/uploads/2019/06/google-dark.jpg&usqp=CAU&ec=48665701">
 				<div class="button-desc">
 					<p>i know most yall got it :(    (fri may 12)</p>
+				</div>
+</div>
+		<div class="button">
+				<img src="https://oddpvp.netlify.app/icons/logo.png">
+				<div class="button-desc">
+					<p>odd games is still here?  (fri may 12)</p>
 				</div>
 </div>
 		<div class="button">
@@ -59,7 +65,8 @@
 		document.querySelectorAll('.button')[2].onclick=function(){window.location.href='https://g0dlygames.vercel.app/pages/games.html'};
 		document.querySelectorAll('.button')[3].onclick=function(){window.location.href='https://fine-erin-salmon-wig.cyclic.app'};
                 document.querySelectorAll('.button')[4].onclick=function(){window.location.href='https://dino4-1.jstack.repl.co/main.html'};
-                document.querySelectorAll('.button')[5].onclick=function(){window.location.href='https://www.example.com/page6'};
+                document.querySelectorAll('.button')[5].onclick=function(){window.location.href='https://oddpvp.netlify.app/'};
+                document.querySelectorAll('.button')[6].onclick=function(){window.location.href='https://www.example.com/page7'};
 	</script>
 </body>
 </html>
