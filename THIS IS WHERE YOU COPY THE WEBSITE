@@ -143,8 +143,8 @@
                 document.querySelectorAll('.button')[13].onclick=function(){window.location.href='https://g0dlygamesv4-beta.vercel.app/projects'};
                 document.querySelectorAll('.button')[14].onclick=function(){window.location.href='https://mgg658.github.io/'};
                 document.querySelectorAll('.button')[15].onclick=function(){window.location.href='https://newportgrizfun.netlify.app/'};
-                document.querySelectorAll('.button')[18].onclick=function(){window.location.href='https://copyofmasite.vercel.app/'};
-                document.querySelectorAll('.button')[19].onclick=function(){window.location.href='https://example.com'};
+                document.querySelectorAll('.button')[16].onclick=function(){window.location.href='https://copyofmasite.vercel.app/'};
+                document.querySelectorAll('.button')[17].onclick=function(){window.location.href='https://example.com'};
 	</script>
 </body>
 </html>
