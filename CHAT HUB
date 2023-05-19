@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BlackCatRussia</title>
+  <style>
+    body {
+      background-color: #5F518A;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #5F518A;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 9999;
+      color: #FFFFFF;
+      animation: fade-in 0.8s cubic-bezier(0.6, 0.04, 0.98, 0.34);
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .title {
+      background-color: #B687C6;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      background-color: #B687C6;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-right: 10px;
+      transition: background-color 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.34);
+    }
+
+    .tab:hover {
+      background-color: #DDB1E1;
+    }
+
+    .tab.active {
+      background-color: #DDB1E1;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+      animation: fade-in 0.8s cubic-bezier(0.6, 0.04, 0.98, 0.34);
+    }
+
+    .chat-widget {
+      width: 800px;
+      height: 600px;
+    }
+
+    .rules-container {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .rules-container h3 {
+      color: #DDB1E1;
+    }
+
+    .rules-container ol {
+      color: #FFFFFF;
+      padding-left: 20px;
+    }
+
+    /* Password Lock Styles */
+    .password-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .password-input {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .password-submit {
+      background-color: #B687C6;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-left: 10px;
+      transition: background-color 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.34);
+    }
+
+    .password-submit:hover {
+      background-color: #DDB1E1;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+  <script>
+    function openTab(event, tabName) {
+      var i, tabContent, tabLinks;
+      tabContent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].classList.remove("active");
+      }
+      tabLinks = document.getElementsByClassName("tab");
+      for (i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).classList.add("active");
+      event.currentTarget.className += " active";
+    }
+
+    function checkPassword() {
+      var password = document.getElementById("password-input").value;
+      if (password === "1234") {
+        document.getElementById("password-lock").style.display = "none";
+        document.getElementById("chat").classList.add("active");
+        document.getElementsByClassName("tab")[0].classList.add("active");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="title">BlackCatRussia</div>
+    <div class="tabs">
+      <button class="tab">Chat</button>
+    </div>
+    <div class="password-container" id="password-lock">
+      <input type="password" class="password-input" id="password-input" placeholder="Enter password">
+      <button class="password-submit" onclick="checkPassword()">Submit</button>
+    </div>
+    <div class="tab-content" id="chat">
+      <div class="chat-widget">
+        <widgetbot server="1075573849481027584" channel="1108878339332132926" width="800" height="600"></widgetbot>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>
