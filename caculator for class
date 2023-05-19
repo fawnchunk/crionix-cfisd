@@ -91,6 +91,14 @@
       <label for="unit-cost">Unit Cost:</label>
       <input type="number" id="unit-cost" step="0.01">
     </div>
+    <div class="form-group">
+      <label for="include-tax">Include Tax:</label>
+      <input type="checkbox" id="include-tax" onchange="toggleTaxInput()">
+    </div>
+    <div class="form-group" id="tax-input" style="display: none;">
+      <label for="tax-percentage">Tax Amount (%):</label>
+      <input type="number" id="tax-percentage" step="0.01">
+    </div>
     <div class="button-container">
       <button onclick="calculateCost()">Calculate</button>
     </div>
@@ -100,6 +108,7 @@
           <th>Item</th>
           <th>Quantity</th>
           <th>Unit Cost</th>
+          <th>Tax Amount</th>
           <th>Cost</th>
         </tr>
       </thead>
@@ -107,7 +116,7 @@
       </tbody>
       <tfoot>
         <tr>
-          <td colspan="3" class="total">Total:</td>
+          <td colspan="4" class="total">Total:</td>
           <td id="total-cost">-</td>
         </tr>
       </tfoot>
@@ -117,9 +126,17 @@
   <script>
     var totalCost = 0;
 
+    function toggleTaxInput() {
+      var taxInput = document.getElementById('tax-input');
+      var includeTax = document.getElementById('include-tax').checked;
+      taxInput.style.display = includeTax ? 'block' : 'none';
+    }
+
     function calculateCost() {
       var totalAmount = parseFloat(document.getElementById('total-amount').value);
       var unitCost = parseFloat(document.getElementById('unit-cost').value);
+      var includeTax = document.getElementById('include-tax').checked;
+      var taxPercentage = parseFloat(document.getElementById('tax-percentage').value);
 
       var tableBody = document.querySelector('#cost-table tbody');
 
@@ -127,15 +144,23 @@
       var itemCell = document.createElement('td');
       var quantityCell = document.createElement('td');
       var unitCostCell = document.createElement('td');
+      var taxAmountCell = document.createElement('td');
       var costCell = document.createElement('td');
 
       var itemNumber = tableBody.children.length + 1;
       var quantity = totalAmount;
       var cost = quantity * unitCost;
+      var taxAmount = 0;
+
+      if (includeTax && !isNaN(taxPercentage)) {
+        taxAmount = cost * (taxPercentage / 100);
+        cost += taxAmount;
+      }
 
       itemCell.textContent = itemNumber;
       quantityCell.textContent = quantity;
       unitCostCell.textContent = '$' + unitCost.toFixed(2);
+      taxAmountCell.textContent = '$' + taxAmount.toFixed(2);
       costCell.textContent = '$' + cost.toFixed(2);
 
       totalCost += cost;
@@ -143,6 +168,7 @@
       row.appendChild(itemCell);
       row.appendChild(quantityCell);
       row.appendChild(unitCostCell);
+      row.appendChild(taxAmountCell);
       row.appendChild(costCell);
 
       tableBody.appendChild(row);
