@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .total {
+      text-align: right;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Item Cost Calculator</h1>
+    <div class="form-group">
+      <label for="total-amount">Amount:</label>
+      <input type="number" id="total-amount" step="0.01">
+    </div>
+    <div class="form-group">
+      <label for="unit-cost">Unit Cost:</label>
+      <input type="number" id="unit-cost" step="0.01">
+    </div>
+    <div class="button-container">
+      <button onclick="calculateCost()">Calculate</button>
+    </div>
+    <table id="cost-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Unit Cost</th>
+          <th>Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3" class="total">Total:</td>
+          <td id="total-cost">-</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <script>
+    var totalCost = 0;
+
+    function calculateCost() {
+      var totalAmount = parseFloat(document.getElementById('total-amount').value);
+      var unitCost = parseFloat(document.getElementById('unit-cost').value);
+
+      var tableBody = document.querySelector('#cost-table tbody');
+
+      var row = document.createElement('tr');
+      var itemCell = document.createElement('td');
+      var quantityCell = document.createElement('td');
+      var unitCostCell = document.createElement('td');
+      var costCell = document.createElement('td');
+
+      var itemNumber = tableBody.children.length + 1;
+      var quantity = totalAmount;
+      var cost = quantity * unitCost;
+
+      itemCell.textContent = itemNumber;
+      quantityCell.textContent = quantity;
+      unitCostCell.textContent = '$' + unitCost.toFixed(2);
+      costCell.textContent = '$' + cost.toFixed(2);
+
+      totalCost += cost;
+
+      row.appendChild(itemCell);
+      row.appendChild(quantityCell);
+      row.appendChild(unitCostCell);
+      row.appendChild(costCell);
+
+      tableBody.appendChild(row);
+
+      updateTotalCost();
+    }
+
+    function updateTotalCost() {
+      document.getElementById('total-cost').textContent = '$' + totalCost.toFixed(2);
+    }
+  </script>
+</body>
+</html>
