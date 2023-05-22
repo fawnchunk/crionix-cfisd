@@ -390,7 +390,7 @@
   <div class="popup-overlay"></div>
   <div class="popup">
     <div class="popup-header">
-      <h2>Game Popup</h2>
+      <h2>blackcatrussia</h2>
       <span class="close-button" onclick="closePopup()">&times;</span>
     </div>
     <div class="popup-body">
