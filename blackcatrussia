@@ -306,82 +306,82 @@
       <div class="game-container">
         <button class="game-button" onclick="openPopup('https://raw.githack.com/3kh0/3kh0-assets/main/2048/index.html')">
           <img class="game-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgpbZu8diUDSkbeRjG4em9YV-kYetgl1Qd6A:https://static.play123.in/game-images/2048-pucks_xl.jpg&usqp=CAU" alt="2048">
-          <h3>Game 1</h3>
+          <h3>2048</h3>
           <span class="play-button">&#9658;</span>
         </button>
         <button class="game-button" onclick="openPopup('https://raw.githack.com/3kh0/3kh0-assets/main/10-minutes-till-dawn/index.html')">
           <img class="game-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVXjW2nt1mWEdx1_AGfWns9CTDPrczKxGFb5_bmamaPKds7LxKVRLbn0UKX1PTx6AdnT0:https://img.itch.zone/aW1nLzg3MTU5NzMucG5n/original/0LqGxb.png&usqp=CAU" alt="10-minutes-till-dawn">
-          <h3>Game 2</h3>
+          <h3>10-minutes-till-dawn</h3>
           <span class="play-button">&#9658;</span>
         </button>
         <button class="game-button" onclick="openPopup('https://raw.githack.com/3kh0/3kh0-assets/main/death-run-3d/index.html')">
           <img class="game-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuxb63yeT9AT5GBkHkbEzL1zQjk2kHf7rEOGaduwJA-1W6OEJHbsmsjOT2oQ8PTO8s3T0:https://slopegame.io/upload/imgs/death-run-3d.png&usqp=CAU" alt="death-run-3d">
-          <h3>Game 3</h3>
+          <h3>death-run-3d</h3>
           <span class="play-button">&#9658;</span>
         </button>
 <button class="game-button" onclick="openPopup('https://raw.githack.com/3kh0/3kh0-assets/main/flappy-bird/index.html')">
           <img class="game-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaqfrYS4c6tQgfXHvAR0fNiOAsIoiM9xS3WA:https://cdn.dribbble.com/users/285333/screenshots/2609465/flappybird1.png&usqp=CAU" alt="flappy-bird">
-          <h3>Game 3</h3>
+          <h3>flappy-bird</h3>
           <span class="play-button">&#9658;</span>
         </button>
 <button class="game-button" onclick="openPopup('https://raw.githack.com/3kh0/3kh0-assets/main/glass-city/index.html')">
           <img class="game-image" src="https://github.com/3kh0/3kh0-Assets/blob/main/glass-city/icon.png?raw=true" alt="glass city">
-          <h3>Game 3</h3>
+          <h3>glass city</h3>
           <span class="play-button">&#9658;</span>
         </button>
 <button class="game-button" onclick="openPopup('https://raw.githack.com/3kh0/3kh0-assets/main/slope/index.html')">
           <img class="game-image" src="https://github.com/3kh0/3kh0-Assets/blob/main/slope/slope4.jpeg?raw=true" alt="slope">
-          <h3>Game 3</h3>
+          <h3>slope</h3>
           <span class="play-button">&#9658;</span>
         </button>
 <button class="game-button" onclick="openPopup('https://raw.githack.com/3kh0/3kh0-assets/main/station-141/index.html')">
           <img class="game-image" src="https://github.com/3kh0/3kh0-Assets/blob/main/station-141/icon.png?raw=true" alt="station-141">
-          <h3>Game 3</h3>
+          <h3>station-141</h3>
           <span class="play-button">&#9658;</span>
         </button>
 <button class="game-button" onclick="openPopup('https://raw.githack.com/3kh0/3kh0-assets/main/vex3/index.html')">
           <img class="game-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNon7x0VYAiNcM2vR2u29PFlhzal9-22Hpg:https://gamemedia.armorgames.com/16049/icn_heroimage.png&usqp=CAU" alt="vex3">
-          <h3>Game 3</h3>
+          <h3>vex3</h3>
           <span class="play-button">&#9658;</span>
         </button>
 <button class="game-button" onclick="openPopup('https://raw.githack.com/3kh0/3kh0-assets/main/vex7/index.html')">
           <img class="game-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSEvHdIRnkU4xW3lY-Mn7Hsn71IksnbyJY3R4X9uwsolPuWHpmqTJXY6pzpIIKd_ZiAuQ:https://img.gamedistribution.com/0c454c9562d249d28ba3a2b50564042c-512x512.jpg&usqp=CAU" alt="vex7">
-          <h3>Game 3</h3>
+          <h3>vex7</h3>
           <span class="play-button">&#9658;</span>
         </button>
 <button class="game-button" onclick="openPopup('https://raw.githack.com/3kh0/3kh0-assets/main/riddleschool1/index.html')">
           <img class="game-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCdw2bh38PBtUcu5-g2bbKZsJg3voWlA4Nn8K3yFHlDik6tr8_CYhQiz1X_FyjPr7TqJ0:https://static.wikia.nocookie.net/riddleschool/images/4/4f/Rs_thumb.jpg/revision/latest%3Fcb%3D20160611065621&usqp=CAU" alt="riddle school">
-          <h3>Game 3</h3>
+          <h3>riddle school</h3>
           <span class="play-button">&#9658;</span>
         </button>
 <button class="game-button" onclick="openPopup('https://raw.githack.com/3kh0/3kh0-assets/main/paperio2/index.html')">
           <img class="game-image" src="https://github.com/3kh0/3kh0-Assets/blob/main/paperio2/images/icon192.png?raw=true" alt="paper.io2">
-          <h3>Game 3</h3>
+          <h3>paper.io2</h3>
           <span class="play-button">&#9658;</span>
         </button>
 <button class="game-button" onclick="openPopup('https://raw.githack.com/3kh0/3kh0-assets/main/learntofly/index.html')">
           <img class="game-image" src="https://github.com/3kh0/3kh0-Assets/blob/main/learntofly/learntofly.png?raw=true" alt="learn-2-fly">
-          <h3>Game 3</h3>
+          <h3>learn-2-fly</h3>
           <span class="play-button">&#9658;</span>
         </button>
 <button class="game-button" onclick="openPopup('https://raw.githack.com/3kh0/3kh0-assets/main/defend-the-tank/index.html')">
           <img class="game-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgEqipf7-U9v4KEoKNsKZAvzuEeanVHfByvoIWZooEr8dbIK0kvLnPlcCs5XP2LmUvYxY:https://gameforge.com/de-DE/littlegames/includes/images/games/9984_5eb3f054058a1.jpg&usqp=CAU" alt="defend the tank">
-          <h3>Game 3</h3>
+          <h3>defend the tank</h3>
           <span class="play-button">&#9658;</span>
         </button>
 <button class="game-button" onclick="openPopup('https://raw.githack.com/3kh0/3kh0-assets/main/deepest-sword/index.html')">
           <img class="game-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ByspWC7yamvAuio0qCn-PFeaiy8zaX1n8WRYkiObyHjkNmc_o6po3StR0HY3pyoiPN0:https://cdn.akamai.steamstatic.com/steam/apps/1647160/header.jpg%3Ft%3D1630307975&usqp=CAU" alt="deepest sword">
-          <h3>Game 3</h3>
+          <h3>deepest sword/h3>
           <span class="play-button">&#9658;</span>
         </button>
 <button class="game-button" onclick="openPopup('https://raw.githack.com/3kh0/3kh0-assets/main/baldis-basics/index.html')">
           <img class="game-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdAQRIVik39Op6q7hkAF7ZVXJOTGqbFM1bsgJUFsnJkzpazTVnidBLW7HJUk9_LErUwxQ:https://play-lh.googleusercontent.com/EPV1TB4So1lB0DGrdCVExDpNU8ML67nd8OqBeoOIM-s6sDicxmDdPvCXD6n7LKevFl0&usqp=CAU" alt="baldis basics">
-          <h3>Game 3</h3>
+          <h3>baldis basics</h3>
           <span class="play-button">&#9658;</span>
         </button>
 <button class="game-button" onclick="openPopup('https://raw.githack.com/3kh0/3kh0-assets/main/among-us/index.html')">
           <img class="game-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxbrxLMgXjzHIVHRWFnPhlcQfFJsDgMYcmzjvEy66FAdbNlSK-NrH_FVz4Ag__eKDz-R8:https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec&usqp=CAU" alt="among us">
-          <h3>Game 3</h3>
+          <h3>among us</h3>
           <span class="play-button">&#9658;</span>
         </button>
       </div>
